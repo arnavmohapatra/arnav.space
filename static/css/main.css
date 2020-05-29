@@ -1,7 +1,7 @@
 body{
     margin: 50;
     font-family: 'Lato', sans-serif;
-    background-image: url(../../media/starry.jpg) !important;
+    background-image: url(../media/starry.jpg) !important;
     
 }
 .jumbotron-hero {
