@@ -1,12 +1,13 @@
 body{
     margin: 50;
     font-family: 'Lato', sans-serif;
-    background-image: url(../media/starry.JPG);
+    
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #121212;
 }
 .jumbotron-hero {
+    background-image: url(../media/starry.JPG);
     background-color: rgba(0, 0, 0, 0);
     color: white;
     background-position: center;
