@@ -24,6 +24,10 @@ def projects():
 def contact():
     return render_template('contact.html')
 
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')
+
 if __name__ == "__main__":
     #app.config['SERVER_NAME'] = 'arnav.space:5000'
     app.run(host='0.0.0.0', port=int(os.getenv("PORT", "8080")), debug=True)

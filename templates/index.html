@@ -9,47 +9,57 @@
 <!-- Body -->
 {% block body %} 
     <!-- Jumbotron (Howdy) -->
-    <div class = "jumbotron jumbotron-fluid text-white text-center jumbotron-hero" style=" margin-bottom: 0;"> 
+    <div class = "jumbotron jumbotron-fluid text-white text-center hero-hello" style=" margin-bottom: 0;"> 
         <div class = "container m-auto" style="padding-top: 25vh;">
             <h1 class= "display-1 text-center font-weight-bold">Howdy, I'm Arnav</h1>
             <p class= "lead text-center font-weight-normal"> I'm an Aerospace Engineering student at the University at Buffalo.</p>
         </div>
+        <a href="#cards">asdasdasd</a>
     </div>
 
     <!-- Navigation Cards -->
-    <div class="card-deck m-auto" style="width: 85vw;">
-        <div class="card">
-            <img src="../static/media/sunset.JPG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="my-5" id="cards">
+        <div class="card-deck m-auto" style="width: 90vw;">
+            <!--About Me Card-->
+            <div class="card">
+                <img src="../static/media/portrait.JPG" class="card-img-top" alt="..." style="height: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title">About Me</h5>
+                    <p class="card-text text-muted">I am currently pursuing a dual Bachelors degree program with Mechanical and Aerospace Engineering at the <a href="http://engineering.buffalo.edu/mechanical-aerospace.html"> University at Buffalo</a>. In my free time I like to play video games, listen to music, and learn new things.</p>
+                    <a type="button" class="btn btn-primary" href="about">About Me</a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../static/media/beach.JPG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            
+            <!--Projects Card-->
+            <div class="card">
+                <img src="../static/media/sunset.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">About Me</h5>
+                    <p class="card-text text-muted">I am currently pursuing a dual Bachelors degree program with Mechanical and Aerospace Engineering at the <a href="http://engineering.buffalo.edu/mechanical-aerospace.html"> University at Buffalo</a>. In my free time I like to play video games, listen to music, and learn new things.</p>
+                    <a type="button" class="btn btn-primary" href="about">About Me</a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../static/media/Helmet1.PNG" class="card-img-top" alt="..." style="width: 100%; height: auto;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a card.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div>
-    
 
-    <div class="text-white">
-        <h1 class= "display-4 text-left">About Me</h1>
-        <br>
-        <p class= "lead text-left">  I am currently pursuing a dual Bachelors degree program with Mechanical and Aerospace Engineering at the <a href="http://engineering.buffalo.edu/mechanical-aerospace.html"> University at Buffalo</a>. I graduated from Blind Brook High School in 2020. In my free time I like </p>
+            <!--Resume Card-->
+            <div class="card">
+                <img src="../static/media/Helmet1.PNG" class="card-img-top" alt="..." style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../static/media/Helmet1.PNG" class="card-img-top" alt="..." style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a card.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
     </div>
+
     
 
 
