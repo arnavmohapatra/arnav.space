@@ -23,6 +23,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    
 }
 .hero-projects {
     background-image: url(../media/earth.JPG);
@@ -32,6 +33,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    position: fixed;
 }
 .hero-resume {
     background-image: url(../media/moon.JPG);
@@ -41,15 +43,16 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    position: fixed;
 }
-span.down {
+#scrollBtn {
     width: 30px;
     height: 30px;
     margin: 0 auto;
-    background: url(../media/down_arrow.PNG) -30px 0 no-repeat;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    backface-visibility: hidden;
+    
+    background-image: url(../media/down_arrow.PNG) no-repeat;
+    border-radius: 50%;
+    border: 0;
 }
 @media (min-width: 48em){
     .page-header__arrow {

@@ -4,6 +4,7 @@
 {% block head %} 
     <title>arnav.space</title>
     <meta name = "description" content="A personal website for Arnav Mohapatra. Arnav is an Aerospace engineering student at University at Buffalo.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {% endblock %}
 
 <!-- Body -->
@@ -14,15 +15,15 @@
             <h1 class= "display-1 text-center font-weight-bold">Howdy, I'm Arnav</h1>
             <p class= "lead text-center font-weight-normal"> I'm an Aerospace Engineering student at the University at Buffalo.</p>
         </div>
-        <a href="#cards">asdasdasd</a>
+        <button id="scrollBtn" href="#scrollBtn"></button>
     </div>
 
     <!-- Navigation Cards -->
-    <div class="my-5" id="cards">
+    <div class="m-5" id="scrollBtn">
         <div class="card-deck m-auto" style="width: 90vw;">
             <!--About Me Card-->
             <div class="card">
-                <img src="../static/media/portrait.JPG" class="card-img-top" alt="..." style="height: 25rem;">
+                <img src="../static/media/portrait.JPG" class="card-img-top" alt="..." style="height: auto; width: 100%;">
                 <div class="card-body">
                     <h5 class="card-title">About Me</h5>
                     <p class="card-text text-muted">I am currently pursuing a dual Bachelors degree program with Mechanical and Aerospace Engineering at the <a href="http://engineering.buffalo.edu/mechanical-aerospace.html"> University at Buffalo</a>. In my free time I like to play video games, listen to music, and learn new things.</p>
@@ -32,7 +33,7 @@
             
             <!--Projects Card-->
             <div class="card">
-                <img src="../static/media/sunset.JPG" class="card-img-top" alt="...">
+                <img src="../static/media/sunset.JPG" class="card-img-top" alt="..." style="height: ; width: 100%;">
                 <div class="card-body">
                     <h5 class="card-title">About Me</h5>
                     <p class="card-text text-muted">I am currently pursuing a dual Bachelors degree program with Mechanical and Aerospace Engineering at the <a href="http://engineering.buffalo.edu/mechanical-aerospace.html"> University at Buffalo</a>. In my free time I like to play video games, listen to music, and learn new things.</p>
@@ -52,17 +53,28 @@
             <div class="card">
                 <img src="../static/media/Helmet1.PNG" class="card-img-top" alt="..." style="width: 100%; height: auto;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a card.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Action</h5>
+                    <p class="card-text">Some stuff for you to do.</p>
+                    <climate-clock />
                 </div>
             </div>
         </div>
     </div>
-
     
+    
+    <script>
+        const scrollBtn = document.querySelector("#scrollBtn");
+        scrollBtn.addEventListener("click", function(){
+            window.scrollTo({
+                top: 500,
+                behavior: "smooth"
+            });
+        })
 
-
+    </script>
+    <script src="https://climateclock.world/widget-v2.js" async></script>
+    
+    
 
 
 {% endblock %}
